@@ -14,11 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500&family=Red+Hat+Text:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7_dtp.css"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
   </head>
   <body>
     <header class="p-2 flex justify-between">
@@ -39,9 +39,9 @@
       </div>
     </header>
     <section class="max-w-screen-lg mx-auto mt-14 p-2">
-      <div class="flex items-center">
+      <div class="flex flex-col md:flex-row items-center ml-8">
         <div>
-          <div>
+          <div class="my-20">
             <h1 class="text-sky-600 my-4">
               Win upto 100x returns on your savings!
             </h1>
@@ -51,7 +51,7 @@
             <div>
               <!-- Begin Mailchimp Signup Form -->
 
-              <div id="mc_embed_signup" class="">
+              <div id="mc_embed_signup">
                 <form
                   action="https://upsidefinance.us20.list-manage.com/subscribe/post?u=52af7241d9176981f9f38794f&amp;id=8c525a8a1a"
                   method="post"
@@ -61,20 +61,17 @@
                   target="_blank"
                   novalidate
                 >
-                  <div
-                    id="mc_embed_signup_scroll"
-                    class="flex justify-center md:justify-start"
-                  >
+                  <div id="mc_embed_signup_scroll" style="display: flex">
                     <!-- <label for="mce-EMAIL">Join the waitlist!</label> -->
                     <input
                       type="email"
                       value=""
                       name="EMAIL"
-                      class="
-                        email
-                        border border-3 border-sky-600
-                        rounded-l-lg
-                        p-2
+                      class="email"
+                      style="
+                        border: 2px solid #0284c7;
+                        border-radius: 0.5rem 0 0 0.5rem;
+                        padding-left: 5px;
                       "
                       id="mce-EMAIL"
                       placeholder="email address"
@@ -98,13 +95,13 @@
                         value="Join the waitlist!"
                         name="subscribe"
                         id="mc-embedded-subscribe"
-                        class="
-                          button
-                          border border-2 border-sky-600
-                          rounded-r-lg
-                          p-2
-                          bg-sky-600
-                          text-white
+                        class="button"
+                        style="
+                          border: 2px solid #0284c7;
+                          border-radius: 0 0.5rem 0.5rem 0;
+                          padding: 0.5rem;
+                          background-color: #0284c7;
+                          color: white;
                         "
                       />
                     </div>
@@ -124,16 +121,20 @@
               <!--End mc_embed_signup-->
             </div>
           </div>
-          <h5 class="my-10">
-            <!-- Earn interest and get lottery tickets as a bonus,
-            <br /> -->
+          <h5 class="mt-20 md:my-10">
             UpsideFinance is powered by the revolutionary blockchain technology
           </h5>
         </div>
-        <div><img src="./src/assets/Bank.png" style="max-height: 400px" /></div>
+        <div>
+          <img
+            src="./src/assets/Bank.png"
+            class="hidden md:block"
+            style="max-height: 400px"
+          />
+        </div>
       </div>
     </section>
-    <section class="max-w-screen-xl mx-auto mt-10 md:mt-20 text-center p-2">
+    <section class="max-w-screen-xl mx-auto mt-20 text-center p-2">
       <div>
         <h2>How does it work?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-2 my-5">
@@ -177,7 +178,7 @@
         <div>
           <!-- Begin Mailchimp Signup Form -->
 
-          <div id="mc_embed_signup" class="">
+          <div id="mc_embed_signup">
             <form
               action="https://upsidefinance.us20.list-manage.com/subscribe/post?u=52af7241d9176981f9f38794f&amp;id=8c525a8a1a"
               method="post"
@@ -187,13 +188,22 @@
               target="_blank"
               novalidate
             >
-              <div id="mc_embed_signup_scroll" class="flex justify-center">
+              <div
+                id="mc_embed_signup_scroll"
+                style="display: flex; justify-content: center"
+              >
                 <!-- <label for="mce-EMAIL">Join the waitlist!</label> -->
                 <input
                   type="email"
                   value=""
                   name="EMAIL"
-                  class="email border border-3 border-sky-600 rounded-l-lg p-2"
+                  class="email"
+                  style="
+                    border: 2px solid #0284c7;
+                    border-radius: 0.5rem 0 0 0.5rem;
+                    padding-left: 5px;
+                    justify-content: center;
+                  "
                   id="mce-EMAIL"
                   placeholder="email address"
                   required
@@ -216,25 +226,25 @@
                     value="Join the waitlist!"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    class="
-                      button
-                      border border-2 border-sky-600
-                      rounded-r-lg
-                      p-2
-                      bg-sky-600
-                      text-white
+                    class="button"
+                    style="
+                      border: 2px solid #0284c7;
+                      border-radius: 0 0.5rem 0.5rem 0;
+                      padding: 0.5rem;
+                      background-color: #0284c7;
+                      color: white;
                     "
                   />
                 </div>
                 <!-- <p>
-                  <a
-                    href="http://eepurl.com/hQaOwf"
-                    title="Mailchimp - email marketing made easy and fun"
-                    ><img
-                      class="referralBadge"
-                      src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                  /></a>
-                </p> -->
+              <a
+                href="http://eepurl.com/hQaOwf"
+                title="Mailchimp - email marketing made easy and fun"
+                ><img
+                  class="referralBadge"
+                  src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+              /></a>
+            </p> -->
               </div>
             </form>
           </div>

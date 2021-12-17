@@ -13,9 +13,12 @@
     @apply text-4xl;
   }
   h2 {
-    @apply text-2xl;
+    @apply text-2xl font-light;
   }
   h5 {
     @apply text-sky-600 text-lg;
   }
+  /* #mc_embed_signup_scroll {
+    @apply flex justify-center md:justify-start;
+  } */
 }
