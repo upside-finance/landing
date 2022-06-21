@@ -4,8 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UpsideFinance - Open, accessible DeFi</title>
+    <meta
+      name="title"
+      content="UpsideFinance - DeFi linked lossless lotteries on Algorand"
+    />
+    <meta
+      name="description"
+      content="UpsideFinance is a lossless lottery app connected to lending platforms on Algorand blockchain. "
+    />
+    <meta name="keywords" content="Savings, algorand, blockchain, dapp" />
+    <meta name="robots" content="index, follow" />
 
+    <meta name="language" content="English" />
+    <title>UpsideFinance - DeFi linked lossless lotteries on Algorand</title>
     <link href="./dist/output.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,8 +30,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
+
+    <meta name="msapplication-TileColor" content="#FF66B3" />
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body class="bg-cream dark:bg-dark_gray">
@@ -39,17 +50,18 @@
           ><span class="text-pink">io</span>
         </div>
       </div>
-      <div class="flex justify-between gap-1">
+      <div class="flex justify-between gap-4">
+        
         <a
           href="https://twitter.com/upsidefi_io"
-          class="text-blue dark:text-blue-light text-sm content-center"
+          class="text-blue dark:text-blue-light text-sm content-center m-auto"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 50 50"
             version="1.1"
-            class="w-6 h-6"
+            class="w-7 h-7"
             fill="currentColor"
           >
             <g id="surface1">
@@ -62,14 +74,14 @@
 
         <a
           href="https://discord.gg/maXqHngAWr"
-          class="text-blue dark:text-blue-light text-sm"
+          class="text-blue dark:text-blue-light text-sm m-auto"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 50 50"
             version="1.1"
-            class="w-6 h-6"
+            class="w-7 h-7"
             fill="currentColor"
           >
             <g id="surface1">
@@ -79,7 +91,12 @@
             </g>
           </svg>
         </a>
-
+        <a
+        href="https://upsidefinance.medium.com"
+        class="text-blue dark:text-blue-light text-sm content-center m-auto"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="w-7 h-7" fill="currentColor"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>
+    </a>
         <button
           id="theme-toggle"
           type="button"
@@ -87,7 +104,7 @@
         >
           <svg
             id="theme-toggle-dark-icon"
-            class="hidden w-5 h-5"
+            class="hidden w-7 h-7"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +115,7 @@
           </svg>
           <svg
             id="theme-toggle-light-icon"
-            class="hidden w-5 h-5"
+            class="hidden w-7 h-7"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -110,129 +127,177 @@
             ></path>
           </svg>
         </button>
+        <!-- <a href="./alpha-notif.html" class="btn-primary">Alpha App</a> -->
       </div>
     </header>
     <section
-      class="max-w-screen-lg mx-auto mt-14 p-2 text-blue dark:text-blue-light"
+      class="max-w-screen-lg mx-auto mt-14 p-4 text-blue dark:text-blue-light"
     >
       <div
-        class="grid md:grid-cols-2 justify-items-stretch text-center md:text-left"
+        class="grid grid-cols-1 md:grid-cols-7 gap-x-12 justify-items-stretch text-center md:text-left"
       >
-        <div class="justify-self-center md:justify-self-start">
+        <div class="mb-20 md:mb-0 md:col-span-3">
           <div class="my-20">
             <h1>
-              Algorand's <br /><span
+              The largest DeFi backed <br /><span
                 class="text-pink font-bold"
                 style="line-height: 3.5rem"
-                >Open and Accessible</span
+                >Lossless lottery</span
               ><br />
-              DeFi Platform
+              on Algorand
             </h1>
 
-            <h2 class="my-7">
-              Create and access<br />Lossless lotteries and staking pools
-            </h2>
+            <h2 class="my-7">Start saving to win big!</h2>
           </div>
           <div>
-            <a href="https://discord.gg/maXqHngAWr" class="btn-primary"
-              >Join our Discord community</a
-            >
+            <h4 class="my-5 font-bold text-lg">
+              Join our
+              <a
+                href="https://discord.gg/maXqHngAWr"
+                class="text-pink underline"
+                >Discord</a
+              >
+              or follow us on
+              <a
+                href="https://twitter.com/upsidefi_io"
+                class="text-pink underline"
+                >Twitter</a
+              >
+              for updates!
+            </h4>
           </div>
         </div>
-        <div class="justify-self-end">
-          <img
-            src="./src/assets/pools-persp.png"
-            class="hidden md:block"
-            style="max-height: 550px"
-          />
+        <div class="my-auto md:col-span-4">
+          <img src="./src/assets/gil-hero.png" class="hidden sm:block" />
         </div>
       </div>
     </section>
     <section
-      class="max-w-screen-xl mx-auto mt-20 text-center p-2 text-blue dark:text-blue-light"
+      class="max-w-screen-lg mx-auto md:mt-20 text-center p-4 text-blue dark:text-blue-light"
     >
-      <h2 class="my-10 font-bold">Why UpsideFinance?</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="element">
-          <div class="m-auto">
-            <img
-              src="./src/assets/open.svg"
-              alt="open"
-              class="m-auto block dark:hidden"
-              style="max-width: 110px"
-            />
-            <img
-              src="./src/assets/open-dark.svg"
-              alt="open"
-              class="m-auto hidden dark:block"
-              style="max-width: 110px"
-            />
-            <h3 class="text-xl font-medium my-4">Open for all</h3>
+      <div>
+        <h2 class="sm:my-20 md:my-10 underline underline-offset-2 font-medium">
+          Why UpsideFinance?
+        </h2>
+        <div class="text-left mt-10 mb-20 text-xl font-medium">
+          <div class="flex flex-wrap gap-4 items-center justify-center my-5">
+            <p class="max-w-sm order-1 md:order-last ">
+              Typical returns on savings are low and can be insignificant
+            </p>
+            <img class="order-last md:order-1" src="./src/assets/crying.png" />
+          </div>
+          <div
+            class="flex flex-wrap gap-4 items-center justify-center mt-20 md:mt-10"
+          >
+            <p class="max-w-sm ">
+              With UpsideFinance, you have a chance at winning huge returns!
+            </p>
+            <img src="./src/assets/winner.png" />
           </div>
         </div>
-        <div class="element">
-          <div class="m-auto">
+      </div>
+      <div >
+        <h2 class="sm:my-20 md:my-10 underline underline-offset-2 font-medium">
+          How does it work?
+        </h2>
+        <div
+          class="mt-10 grid md:grid-cols-3 gap-4 justify-center justify-items-center md:justify-between items-end text-xl font-medium "
+        >
+          <div class="flex flex-col max-w-max">
+            <p class="max-w-sm order-1 md:order-last">
+              1. Deposit in one of the pools
+            </p>
             <img
-              src="./src/assets/beginner.svg"
-              alt="beginner"
-              class="m-auto block dark:hidden"
-              style="max-width: 110px"
+              class="order-last md:order-1 max-h-40 object-contain my-5"
+              src="./src/assets/deposit.png"
             />
-            <img
-              src="./src/assets/beginner-dark.svg"
-              alt="beginner"
-              class="m-auto hidden dark:block"
-              style="max-width: 110px"
-            />
-            <h3 class="text-xl font-medium my-4">Beginner friendly</h3>
           </div>
-        </div>
-        <div class="element">
-          <div class="m-auto">
+          <div class="flex flex-col max-w-max">
+            <p class="max-w-sm order-1 md:order-last">
+              2. Wait for the draw period
+            </p>
             <img
-              src="./src/assets/lossless.svg"
-              alt="lossless"
-              class="m-auto block dark:hidden"
-              style="max-width: 110px"
+              class="order-last md:order-1 max-h-40 object-contain my-5"
+              src="./src/assets/calendar.png"
             />
-            <img
-              src="./src/assets/lossless-dark.svg"
-              alt="lossless"
-              class="m-auto hidden dark:block"
-              style="max-width: 110px"
-            />
-            <h3 class="text-xl font-medium my-4">
-              Lossless lotteries and Staking pools
-            </h3>
           </div>
-        </div>
-        <div class="element">
-          <div class="m-auto">
+          <div class="flex flex-col max-w-max">
+            <p class="max-w-sm order-1 md:order-last">
+              3. Win the collective interest!
+            </p>
             <img
-              src="./src/assets/transparent.svg"
-              alt="transparent"
-              class="m-auto block dark:hidden"
-              style="max-width: 110px"
+              class="order-last md:order-1 max-h-40 object-contain my-5"
+              src="./src/assets/dice.png"
             />
-            <img
-              src="./src/assets/transparent-dark.svg"
-              alt="transparent"
-              class="m-auto hidden dark:block"
-              style="max-width: 110px"
-            />
-            <h3 class="text-xl font-medium my-4">
-              Transparent and Fair mechanics
-            </h3>
           </div>
         </div>
       </div>
     </section>
     <section
-      class="max-w-screen-xl mx-auto mt-20 text-center p-2 text-blue dark:text-blue-light"
+      class="max-w-screen-lg mx-auto md:mt-20 text-center p-4 text-blue dark:text-blue-light"
     >
-      <h2 class="my-10 font-bold">Our Team</h2>
-      <div class="grid md:grid-cols-3 gap-4">
+    <h2 class="sm:my-20 md:my-10 underline underline-offset-2 font-medium">
+      Timeline
+    </h2>
+    <div class="flex justify-center md:justify-between">
+      <img class="bounce-2 hidden md:block self-center" style="max-height: 34rem;" src="./src/assets/gil-hover.png" alt="">
+    <img
+    src="src/assets/timeline.png"
+    class="w-96 md:w-1/2 md:p-5 block dark:hidden"
+  />
+  <img
+    src="src/assets/timeline-dark.png"
+    class="w-96 md:w-1/2 md:p-5 hidden dark:block"
+  />
+    </div>
+
+  </section><section
+      class="max-w-screen-xl mx-auto text-center p-2 text-blue dark:text-blue-light"
+    >
+    <div>
+      <h4 class="my-5 font-bold text-lg">
+        Join our
+        <a
+          href="https://discord.gg/maXqHngAWr"
+          class="text-pink underline"
+          >Discord</a
+        >
+        or follow us on
+        <a
+          href="https://twitter.com/upsidefi_io"
+          class="text-pink underline"
+          >Twitter</a
+        >
+        for updates!
+      </h4>
+    </div>
+    <div class="mt-5 pt-5" id="medium">
+      <div class="text-center">
+       
+          <div id="logo"></div>
+          <h2 class="sm:my-20 md:my-10 underline underline-offset-2 font-medium">
+            Latest blogs
+          </h2>
+          
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-5" id="jsonContent">
+      </div>
+      <a class="font-bold text-lg text-pink " href="https://upsidefinance.medium.com/" target="_blank" role="button">View all posts on our Medium &#12297;</a>
+  </div>
+    </section>
+   
+    <section
+      class="max-w-screen-xl mx-auto text-center p-2 text-blue dark:text-blue-light my-20"
+    >
+      <h2 class="underline underline-offset-2 font-medium">
+          Core team
+        </h2><div class="grid md:grid-cols-2 gap-4 max-w-xl m-auto my-10">
+        
         <div>
+          <img
+              class="order-last md:order-1 max-h-40 object-contain my-5 mx-auto"
+              src="./src/assets/tejas.png"
+            />
           <h3 class="text-xl font-medium my-4">
             <span class="text-pink font-medium">Tejas</span> Kothari
           </h3>
@@ -255,6 +320,11 @@
           </a>
         </div>
         <div>
+          
+          <img
+              class="order-last md:order-1 max-h-40 object-contain my-5 mx-auto"
+              src="./src/assets/nishant.png"
+            />
           <h3 class="text-xl font-medium my-4">
             <span class="text-pink font-medium">Nishant</span> Pandav
           </h3>
@@ -276,43 +346,43 @@
             </svg>
           </a>
         </div>
-        <div>
-          <h3 class="text-xl font-medium my-4">
-            <span class="text-pink font-medium">Khalil</span> Rouatbi
-          </h3>
-          <p>Data analyst and fullstack developer</p>
-          <a href="https://www.linkedin.com/in/khalil-hedi-rouatbi-a74370193/"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="30"
-              height="30"
-              viewBox="0 0 50 50"
-              fill="currentColor"
-              class="m-auto mt-2"
-            >
-              <path
-                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
-              ></path>
-            </svg>
-          </a>
+        
+    </section>
+     <section  class="max-w-screen-xl mx-auto mt-10 text-center p-2 text-blue dark:text-blue-light">
+      <hr class="border-blue dark:border-blue-light">
+      <div class="m-auto mt-10 max-w-default grid md:grid-cols-2 gap-10">
+        
+          <h2 class="my-10 font-bold"> Frequently asked questions</h2>
+      
+        <div class="">
+          <div class="md:max-w-3xl m-auto">
+            <details class="border-b-2 dark:border-gray-700">
+              <summary class="p-4 font-bold cursor-pointer pt-5 mb-1 text-lg focus:text-pink">What is UpsideFinance?</summary>
+              <p class="py-2 px-3 text-left">UpsideFinance is Algorand's first DeFi linked lossless lottery platform. The app encourages users to save by rewarding winners with aggregated interest. As this is a savings platform, users face no risk of losing their deposits.</p>
+            </details>
+            <details class="border-b-2 dark:border-gray-700">
+              <summary class="p-4 font-bold cursor-pointer pt-5 mb-1 text-lg focus:text-pink">How are the rewards generated?</summary>
+              <p class="py-2 px-3 text-left">Rewards are generated via lending platforms such as AlgoFi that provide a variable interest rate on deposits. The accumulated interest on the pooled deposit acts as a reward for the lossless lottery participants.</p>
+            </details>
+            <details class="border-b-2 dark:border-gray-700">
+              <summary class="p-4 font-bold cursor-pointer pt-5 mb-1 text-lg focus:text-pink">Is UpsideFinance decentralised?</summary>
+              <p class="py-2 px-3 text-left">At this point, we are using a semi-centralised approach. Users&#39; deposits are transferred from the smart contract to our private wallet, and then supplied to Algofi using their SDK. We understand it&#39;s not an ideal approach, but all the transfers are traceable and transparent on-chain. We&#39;ll employ a fully decentralised approach once the consensus upgrade is available.</p>
+            </details>
+            <details class="border-b-2 dark:border-gray-700">
+              <summary class="p-4 font-bold cursor-pointer pt-5 mb-1 text-lg focus:text-pink">Why can't I deposit/withdraw/claim reward?</summary>
+              <p class="py-2 px-3 text-left">We're operating with some restrictions on the app functionality. You can deposit only once in the lossless lottery. Withdrawing and claiming rewards is possible only after the lottery ends and funds are reclaimed from the DeFi protocol.</p>
+            </details>
+            <details class="border-b-2 dark:border-gray-700">
+              <summary class="p-4 font-bold cursor-pointer pt-5 mb-1 text-lg focus:text-pink">What are my odds of winning?</summary>
+              <p class="py-2 px-3 text-left">Winning odds are directly proportional to your share of deposit in the lossless lottery pool. Later versions of the app will allow users to deposit and leverage their UpsideFinance rewards (rUFt) tokens to increase their winning odds.</p>
+            </details>
+            
+            </div>
         </div>
       </div>
     </section>
-    <section
-      class="max-w-screen-xl mx-auto mt-20 text-center p-2 text-blue dark:text-blue-light"
-    >
-      <h2 class="my-10 font-bold">
-        Join our
-        <a href="https://discord.gg/maXqHngAWr" class="text-pink">Discord</a> or
-        follow us on
-        <a href="https://twitter.com/upsidefi_io" class="text-pink">Twitter</a>
-        for updates!
-      </h2>
-    </section>
-    <footer class="text-center mb-10 text-blue dark:text-blue-light">
-      <div class="flex gap-2 justify-center my-4">
+    <footer class="text-center my-20 text-blue dark:text-blue-light">
+      <div class="flex gap-4 justify-center my-4">
         <a
           href="https://twitter.com/upsidefi_io"
           class="text-blue dark:text-blue-light text-sm content-center"
@@ -322,7 +392,7 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 50 50"
             version="1.1"
-            class="w-6 h-6"
+            class="w-7 h-7"
             fill="currentColor"
           >
             <g id="surface1">
@@ -342,7 +412,7 @@
             xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 50 50"
             version="1.1"
-            class="w-6 h-6"
+            class="w-7 h-7"
             fill="currentColor"
           >
             <g id="surface1">
@@ -352,6 +422,12 @@
             </g>
           </svg>
         </a>
+        <a
+          href="https://upsidefinance.medium.com"
+          class="text-blue dark:text-blue-light text-sm content-center"
+        >
+        <svg  xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="w-7 h-7" fill="currentColor"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>
+      </a>
       </div>
       <p>
         Contact us:
@@ -360,6 +436,8 @@
         >
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="medium-script.js"></script>
   </body>
 </html>
