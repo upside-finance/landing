@@ -4,9 +4,6 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Red Hat Text"],
-      },
       colors: {
         cream: "#F1F2F6",
         blue: { light: "#BBE6E4", sky: "#42BFDD", DEFAULT: "#235B8B" },
@@ -17,8 +14,8 @@ module.exports = {
         dark_gray: "#181a20",
       },
       fontFamily: {
-        sans: ["Red Hat Text"],
-        headings: ["Red Hat Display"],
+        sans: ['"Ubuntu"'],
+        // headings: ["Red Hat Display"],
       },
       boxShadow: {
         DEFAULT: "-4px 4px 0 #FF66B3",
