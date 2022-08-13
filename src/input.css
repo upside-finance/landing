@@ -20,6 +20,9 @@
   h2 {
     @apply text-3xl font-light;
   }
+  h3 {
+    @apply text-3xl font-light text-pink;
+  }
   h5 {
     @apply text-lg;
   }
